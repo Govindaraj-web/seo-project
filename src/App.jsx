@@ -11,7 +11,7 @@ function App() {
         <div className="container">
           <Link className="navbar-brand" to="/">Portfolio</Link>
           <div className="collapse navbar-collapse">
-            <ul className="navbar-nav ms-auto">
+            <ul className="navbar-nav ms-auto"> 
               <li className="nav-item">
                 <Link className="nav-link" to="/">Home</Link>
               </li>
