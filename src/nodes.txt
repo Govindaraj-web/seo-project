@@ -14,3 +14,5 @@ npm install react-router-dom
 
 
 npm install react-helmet-async
+
+npm run build
