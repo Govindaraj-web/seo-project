@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet-async";
-import './Home.css';
 
 function Home() {
   return (
@@ -7,14 +6,30 @@ function Home() {
       <Helmet>
         <title>Home | Arjun Govind Portfolio</title>
         <meta name="description" content="Frontend Developer Portfolio of Arjun Govind using React, Vite, and Bootstrap." />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Arjun Govind",
+              "url": "https://seo-project-web.netlify.app/",
+              "sameAs": [
+                "http://www.linkedin.com/in/arjungovind02",
+                "https://github.com/Govindaraj-web/seo-project"
+              ],
+              "jobTitle": "Frontend Developer",
+              "worksFor": {
+                "@type": "Organization",
+                "name": "Freelance"
+              }
+            }
+          `}
+        </script>
       </Helmet>
 
-      <div className="hero d-flex align-items-center justify-content-center text-white text-center">
-        <div>
-          <h1 className="display-3 fw-bold">Hey, I'm Arjun 👨‍💻</h1>
-          <p className="lead">React Developer | SEO-Friendly | UI Focused</p>
-          <a href="/projects" className="btn btn-primary btn-lg mt-3">Check My Projects</a>
-        </div>
+      <div className="container mt-5">
+        <h1>Welcome to My Portfolio</h1>
+        <p>This is the homepage of Arjun Govind's SEO-optimized React portfolio site.</p>
       </div>
     </>
   );
