@@ -1,0 +1,16 @@
+npm create vite@latest seo-project --template react
+cd seo-project
+npm install
+npm install bootstrap
+
+Then in main.jsx, import Bootstrap CSS:
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+npm install react-helmet
+
+
+npm install react-router-dom
+
+
+npm install react-helmet-async
